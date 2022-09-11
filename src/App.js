@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useEffect } from 'react';
+import Epic from './components/Epic';
 function App() {
+  useEffect(() => {
+   Epic();
+  }, [])
+  
   return (
     <div className="App">
       <header className="App-header">

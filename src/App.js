@@ -1,10 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import Epic from './components/Epic';
+import { useEffect,useState } from 'react';
+import {getEpicGames, getSteamGames} from './components/GamesApi';
 function App() {
+  const [epicgames, setepicgames] = useState()
+  const [steamgames, setsteamgames] = useState()
   useEffect(() => {
-   Epic();
+    getEpicGames("US").then((data) => {
+      setepicgames(data)
+    })
+    getSteamGames("US").then((data) => {
+      setsteamgames(data)
+    })
+
   }, [])
   
   return (
@@ -20,7 +28,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
       </header>
     </div>

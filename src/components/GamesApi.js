@@ -2,7 +2,6 @@ import axios from "axios";
 import cheerio from "cheerio";
 import prime from '../static/images/prime.jpg';
 export async function getEpicGames(countryCode) {
-    console.log("getEpicGames");
     function checkIfFree(game){
         if(game.price.totalPrice.discount>0)
         {

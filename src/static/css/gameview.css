@@ -87,6 +87,15 @@
         width: 80%;
         height: 30%;
     }
+    .main-container {
+        height: 20vh;
+    }
+    .game-title-text{
+        font-size: 1.5rem;
+    }
+    .game-offer-platform{
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width: 991px) {

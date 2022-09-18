@@ -7,22 +7,13 @@ const Hero = (props) => {
     const [freeGames, setfreeGames] = useState([])
     const [loading, setloading] = useState(false)
     useEffect(() => {
-
-    //   setloading(true)
-    //   getFreeGames().then(data => {
-    //     console.log(data)
-    //     setfreeGames(data);
-    //     setloading(false)
-    //   })
+      setloading(true)
+      getFreeGames().then(data => {
+        console.log(data)
+        setfreeGames(data);
+        setloading(false)
+      })
     }, [])
-    const crawlGames = () => {
-        setloading(true)
-        getFreeGames().then(data => {
-          console.log(data)
-          setfreeGames(data);
-          setloading(false)
-        })
-    }
   return (
     <div className="hero-container">
         {!loading && freeGames.length>0 && freeGames.map((game,index)=>{
@@ -30,7 +21,6 @@ const Hero = (props) => {
             return (<GameView game={game}></GameView>)
         })}
         {loading && <div className="hero-loading"><div className="spinner"></div>  CRAWLING FREE GAMES FOR YOU</div>}
-        {!freeGames.length>0 && <div className="hero-loading"><button className="crawl-buttom" onClick={crawlGames}>CRAWL FREE GAMES</button></div>}
     </div>
   )
 }

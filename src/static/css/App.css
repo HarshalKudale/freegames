@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+.App {
+  /* /* width: 100%; */
+  display: flex;
+  /* overflow: auto;   */
+  flex-direction: column;
+   background-size: cover;  
+   background-color: black;
+  /* background-image: url("https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGdhbWV8ZW58MHx8fHwxNjYyODIyNjIw&ixlib=rb-1.2.1&w=1500"); */
+}

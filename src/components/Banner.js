@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className="banner-banner">
       <span className="banner-info">
-            WEBSITE WILL CRAWL FREE GAMES AND DLC'S FROM STEAM , EPIC GAMES, PRIME GAMING AND POST IT HERE. SOME FEATURES ARE TO BE ADDED.
+            WEBSITE WILL CRAWL FREE GAMES AND DLC'S FROM STEAM , EPIC GAMES, PRIME GAMING, UBISOFT AND POST IT HERE. SOME FEATURES ARE TO BE ADDED.
       </span>
     </div>
   )

@@ -60,8 +60,7 @@
     flex-direction: column;
 }
 
-.game-offer-platform,
-.game-offer-period {
+.game-offer-platform{
     width: 100%;
     text-align: center;
 }

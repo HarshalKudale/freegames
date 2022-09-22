@@ -1,3 +1,1 @@
-# freegames
-
-Website is live at https://freegames.codewrath.tech
+Website is live at https://codewrath.tech

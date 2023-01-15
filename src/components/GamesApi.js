@@ -44,7 +44,7 @@ export async function getAmazonGames() {
     let monthIndex = (new Date().getMonth());
     let monthName = monthNames[monthIndex];
 
-    const response = await axios.get(`https://api.codetabs.com/v1/proxy?quest=https://gg.deals/subscription-news/free-games-with-prime-${monthName}-2022/`);
+    const response = await axios.get(`https://api.codetabs.com/v1/proxy?quest=https://gg.deals/subscription-news/free-games-with-prime-${monthName}-2023/`);
     const parser = new DOMParser();
     const doc = parser.parseFromString(response.data, "text/html");
     const list = doc.getElementsByTagName("ul");
